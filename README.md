@@ -1,24 +1,19 @@
 # ExtraDoilies
 
-TODO: Write a gem description
+I really like [table cloth](https://github.com/bobbytables/table_cloth).
 
-## Installation
+This project is some extra stuff for table_cloth.
 
-Add this line to your application's Gemfile:
+`gem 'extra_doilies'` gets you:
 
-    gem 'extra_doilies'
+```ruby
+class BookTable < TableCloth::Base
+  column :"#", using: ExtraDoilies::CounterColumn
+  column :title, using: ExtraDoilies::LinkedColumn
+  column :author, using: ExtraDoilies::LinkedAssociationColumn
+```
 
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install extra_doilies
-
-## Usage
-
-TODO: Write usage instructions here
+This will get you a numbered column, a title column (linked to the ActiveModel object), and a column for author, with links to that author. Woo!
 
 ## Contributing
 

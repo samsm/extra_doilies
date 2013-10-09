@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = ExtraDoilies::VERSION
   spec.authors       = ["Sam Schenkman-Moore"]
   spec.email         = ["samsm@samsm.com"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
+  spec.description   = %q{Extra columns for use with the gem table_cloth.}
+  spec.summary       = %q{Extras for table_cloth}
   spec.homepage      = ""
   spec.license       = "MIT"
 
